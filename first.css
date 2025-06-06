@@ -10,13 +10,25 @@ html, body {
     height: 100%;
     width: 100%;
 }
+#crsr{
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    
+    border: 1px solid white;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
+
 #loader{
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: 100;
     background-color: rgb(8, 8, 8);
-    padding: 20vh 10vw;
+    padding: 20vh 20vw;
 }
 
 .line h1{
@@ -26,7 +38,7 @@ html, body {
 .line h2{
     font-size: 4vw;
     animation-name: anime;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 .line{
@@ -35,19 +47,21 @@ html, body {
     display:flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 3vw;
+    gap: 2vw;
 }
 #line1part1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4vw;
+    gap: .1vw;
     font-size: 4vw;
+    width: 20vw;
 
 }
 #line1part1 h5, #line1part1 h6{
     font-family: 'silk serif';
     font-weight: 200;
+    width: 9vw;
 }
 @keyframes anime {
     0%{
@@ -84,5 +98,54 @@ html, body {
 #page1{
     height: 100vh;
     width: 100%;
-    background-color: rgb(92, 40, 40);
+    background-color: rgb(3, 3, 3);
+}
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+    color: #f6e8e8;
+    
+}
+#page1 #nav img{
+   color: rgb(45, 103, 153);
+   font-size: 20PX;  
+
+}
+#nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#nav h4{
+    font-size: 0.9vw;
+}
+
+.hero{
+    /* background-color: #df0a0a; */
+    width: 70%;
+    margin-left: 30%;
+    height: fit-content;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.hero:nth-child(2){
+    margin-top: 11vh;
+}
+.hero h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+}
+.hero h2,.hero h3{
+    font-size: 6vw;
+    text-transform: uppercase;
+}
+.hero h2:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
 }
