@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROXX Agency</title>
+    
     <link rel="shortcut icon" href="./fav icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -33,7 +36,7 @@
         </div>
     </div>
     <div id="main">
-        <div id="page1">
+        <div id="page1" data-scroll >
             <div id="nav">
                 <h1>Roxx</h1>
                 <div id="nav2">
@@ -59,16 +62,25 @@
                 <h1>Experience</h1>
             </div>
         </div>
-        <div id="page2">
+        <div id="page2" data-scroll data-scroll-speed="-2.5">
             <div id="videocontainer"> 
                 <div id="videocursor">
-                    <i class="ri-play-reverse-mini-fill"></i>
+                    <i class="ri-play-fill"></i>
                 </div>
                 <img src="https://cdn.pixabay.com/photo/2015/12/15/09/20/car-1093927_1280.jpg" alt="" srcset="">
                 <video autoplay loop  src="https://cdn.pixabay.com/video/2023/10/12/184734-873923034_tiny.mp4"></video></div>
         </div>
-        <div id="page3"></div>
-        <div id="page4">
+        <div id="page3" data-scroll data-scroll-speed="-2">
+            <h1>About ROXX</h1>
+            <div class="underline"></div>
+            <div id="imagedivcontainer">
+                <div class="imagediv">
+                    <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?q=80&w=1921&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="">
+                    <img src="https://images.unsplash.com/photo-1667346776191-60e98817725e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <div id="page4" data-scroll>
             <div id="page4content">
                 <h1>About Roxx</h1>
                 <div class="underline"></div>
@@ -100,17 +112,67 @@
             </div>
         </div>
         <div id="page5">
-            
+            <div class="elem">
+                <h1>Sport - fASHION - Technology- </h1>
+                <h1>Sport - fASHION - Technology- </h1>
+                
+            </div>
+            <div class="elem2">
+                <h1>science - partner - travel</h1>
+                <h1>science - partner - travel</h1>
+            </div>
+            <div class="elem">
+                <h1>Sport - fASHION - Technology- </h1>
+                <h1>Sport - fASHION - Technology- </h1>
+                
+            </div>
+            <div class="elem2">
+                <h1>science - partner - travel</h1>
+                <h1>science - partner - travel</h1>
+            </div>
+        </div>
+        <div id="footer">
+            <h1>Let's Create</h1>
+            <div class="underline"></div>
+
+            <div id="footerelem">
+                <div class="box">
+                    <h6>social</h6>
+                    <h5>instagram</h5>
+                    <h5>facebook</h5>
+                    <h5>Linkedin</h5>
+                </div>
+                <div class="box">
+                    <h6>Address</h6>
+                    <h5>Sai muhalla,</h5>
+                    <h5>Garhwa</h5>
+                    
+                </div>
+                <div class="box">
+                    <h6>say hii </h6>
+                    <h5>rajamehta442@gmail.com</h5>
+                    
+                </div>
+               
+            </div>
+            <div class="underline"></div>
         </div>
         
     </div>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script  type="text/javascript" 
+     src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
     <script src="first.js"></script>
 </body>
 </html>

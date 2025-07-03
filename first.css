@@ -145,12 +145,12 @@ html, body {
 .hero h2{
     font-size: 6vw;
     text-transform: uppercase;
-    border-bottom: .7vw solid white;
+    border-bottom: .5vw solid rgb(254, 250, 250);
     padding-bottom: .5vw;
 
 }
 .hero h2:hover{
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 1px white;
     color: transparent;
 }
 
@@ -196,7 +196,7 @@ html, body {
 }
 
 #videocursor i{
-   
+   color: black;
     font-size: 2vw;
 }
 
@@ -205,6 +205,31 @@ html, body {
     width: 100%;
     background-color: rgb(33, 26, 26);
     position: relative;
+ 
+}
+#page3 h1{
+    margin-left: 29vw;
+    font-size: 15vh;
+    font-weight: 400;
+    padding: 7vh 0;
+    
+}
+
+#imagedivcontainer{
+    background-color: red;
+    padding: 1vw;
+    position: relative;
+}
+.imagediv{
+    height: 33vh;
+    width: 20vw;
+    position: relative;
+    overflow: hidden;
+}
+.imagediv img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #page4{
@@ -287,5 +312,100 @@ width: 13vw;
 #page5{
     min-height: 100vh;
     width: 100%;
-    padding: 5vw 0;
+position: relative;
+}
+
+.elem{
+    
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-x: hidden;
+}
+.elem h1{
+    font-size: 5vw;
+    -webkit-text-stroke: 1px white;
+    font-weight: 400;
+    display: inline-block;
+    text-transform: uppercase;
+    color: transparent;
+    margin-right: 10px;
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes animate {
+    from{
+        transform: translateX(0);
+    }
+    
+    to{
+        transform: translateX(calc(-100% ));
+    }
+}
+
+.elem2{
+    
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-x: hidden;
+}
+.elem2 h1{
+    font-size: 5vw;
+    -webkit-text-stroke: 1px white;
+    font-weight: 400;
+    display: inline-block;
+    text-transform: uppercase;
+    color: transparent;
+    margin-right: 10px;
+    transform: translateX(calc(-100% ));
+    animation-name:animate ;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    animation-direction: reverse;
+}
+#footer{
+    height: 70vh;
+    width: 100%;
+
+    position: relative;
+    padding-left:20vw;
+    
+}
+#footer h1{
+    font-size: 5vw;
+    width: 60vw;
+   text-transform: uppercase;
+    margin-left: 8vw;
+    margin-bottom: 4vh;
+   
+}
+.underline{
+height: 4px;
+width: 100%;
+background-color: #fff;
+ margin: .6vw 0;
+}
+
+#footerelem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+#footerelem h6{
+    font-size: 1vw;
+    margin-bottom: 1.5vw;
+    text-transform: uppercase;
+}
+.box{
+    width: 20% ;
+}
+
+#footerelem h5{
+    font-size: 1.2vw;
+    margin: 0.2vh 0;
+    font-weight: 300;
 }
