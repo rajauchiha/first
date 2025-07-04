@@ -205,6 +205,7 @@ html, body {
     width: 100%;
     background-color: rgb(33, 26, 26);
     position: relative;
+
  
 }
 #page3 h1{
@@ -219,17 +220,23 @@ html, body {
     background-color: red;
     padding: 1vw;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .imagediv{
     height: 33vh;
     width: 20vw;
     position: relative;
+    flex-shrink: 0;
     overflow: hidden;
 }
 .imagediv img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 #page4{
@@ -408,4 +415,9 @@ background-color: #fff;
     font-size: 1.2vw;
     margin: 0.2vh 0;
     font-weight: 300;
+}
+
+._canvas_container{
+    z-index: 99999 !important;
+    pointer-events: none;
 }
